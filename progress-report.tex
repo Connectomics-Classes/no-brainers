@@ -1,0 +1,86 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{cite}
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+
+
+\title{Mapping the Brain: Introduction to Connectomics\\Progress Report: Extraction of Novel Biological Priors}
+\author{Katie Link, Elizabeth Morgan and Sandra Weiss}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{Summary}
+
+So far, we have identified and gathered initial data on our four priors of interest: branch angle, branch length, path length, and branch order. Through learning the TREES toolbox, we have made a script that calculates the mean and standard deviation of each. Hurdles that have slowed us down include the confusing nature of the TREES Matlab toolbox, a failed attempt to find other programs that are easier to use and can extract information on other interesting priors, and the simple fact that our coding experience is not the greatest. However, we have and continue to utilize our neuroscience knowledge to collect meaningful data from previous literature and our own dataset of neurons from NeuroMorpho, which gives us a well-organized and quick way to access thousands of neuronal skeletons for us to extract meaningful prior information from using TREES.
+
+\section{Updated Goals}
+Has your scope or of the project changed/been refined at all?
+Some Matlab coding is being done to graph comparisons between branch angle, branch length, path length, and other possible priors, since the TREES toolbox did not include everything we needed. We are not planning on creating a machine-learning pipeline. Instead, the end goal is to propose a machine-learning pipeline for identifying different neurons using priors. Also, once analyzing the priors between different neuron types, we will compare these results to previously done research. It would be interesting to find a unifying relationship from the priors to group and identify neurons (no longer have to extract an entire neuron from EM image in order to classify). If we have time, we will try to extract the neuronal skeleton from EM images using centroids and analyze them based on our extracted information on priors.\\
+
+
+\section{Updated Timeline}
+\textbf{Saturday, January 16th:} \\
+By this date, we will have finalized the data collection for the  chosen priors: branch order, branch length, branch angle, path length and number of tips. \\
+\\
+\textbf{Sunday - Monday, January 17th - 18th:} \\
+After the data collection is completed, we will analyze and compile our findings. We will compare inter neurons and pyramidal cells found in the neocortex of a mouse, and see if the priors we analyzed can be used to distinguish between the two types of cells. Depending on time constraints, we may also compare cells from different parts of the  mouse brain as well. In addition, we will also do some literary search and compare our results to what has been found before, making sure that our findings can be supported. \\
+\\
+\textbf{Tuesday, January 19th:} \\
+During class time, we will regroup and gather all of our analysis and data together, ready to put it together into a poster.\\
+\\
+\textbf{Wednesday, January 20th:} \\
+We will spend the day putting the poster together, presenting our findings in a succinct and clear manner.\\
+\\
+\textbf{Thursday, January 21th:} \\
+Last day of class! We are ready to present!
+
+\bibliography{yourbibname}{}
+\bibliographystyle{plain}
+
+\end{document}
