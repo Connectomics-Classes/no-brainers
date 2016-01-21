@@ -1,5 +1,5 @@
-# no-brainers: Extraction of Priors from Neuronal Skeletons
-Katie, Sandra, Elizabeth
+# Extraction of Priors from Neuronal Skeletons
+By the No-Brainers Team: Katie, Sandra, Elizabeth
 
 Our project's goal is the extraction of biological priors from neuronal skeletons for eventual classification of cell type. The script we produced takes .swc files (we used NeuroMorpho.org to download neuronal skeletons of interest, specifically granule and pyramidal cells of the rat hippocampus from the Turner Lab) and outputs information on branching angle, branch length, path length, branch order, number of tips, and number of branches. Specifically, the script outputs:
 - the above mentioned priors' means and standard deviations of both sets of neurons
