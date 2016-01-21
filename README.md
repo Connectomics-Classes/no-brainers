@@ -6,7 +6,7 @@ Our project's goal is the extraction of biological priors from neuronal skeleton
 - overlaying plots using the kernal smoothing function estimate
 - the statistical difference using the Hellinger distance
 
-To run the MATLAB script, you will need to download the TREES toolbox, which can be found here: http://www.treestoolbox.org/
+To run the MATLAB script, you will need to download the TREES toolbox, which can be found here:[ http://www.treestoolbox.org/ ].
 Your two groups of trees should be organized into two different folders. While within the folder with TREES, enter "start_trees", then enter the first of your trees' folders. Run the the first section in one folder of trees, then the second section within your second folder of trees.
 
 Poster: https://www.lucidchart.com/invitations/accept/5dbe965d-1576-454d-a6e6-02c1114ea5d8
